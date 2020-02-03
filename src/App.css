@@ -27,6 +27,29 @@
 .App-link {
   color: #61dafb;
 }
+.editorContainer {
+  padding: 1em;
+  margin: 1em;
+}
+
+.editors {
+  border: 1px #8c98a2 solid;
+  border-radius: 0.3rem;
+  padding: 1em;
+  margin: 1em;
+  font-family: "Open Sans";
+  font-size: 90%;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.editors-dante {
+  border: 1px #8c98a2 solid;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +58,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+a:link {
+  cursor: pointer;
+}
+a:visited {
+  /* color: linear-gradient(to bottom, #6a11cb 0%, #2575fc 100%); */
+  color: radial-gradient(#16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+.material-icons {
+  font-size: 90%;
 }
