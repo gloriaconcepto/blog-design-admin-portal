@@ -29,9 +29,9 @@ const Header = memo(props => {
         {!isSmallScreen && <Link to="/">Logout</Link>}
       </nav>
       <nav className="mobile">
-        {isSmallScreen && <a href="/">Create</a>}
-        {isSmallScreen && <a href="/">Blogs</a>}
-        {isSmallScreen && <a href="/">Logout</a>}
+        {isSmallScreen && <Link to="/creatblog">Create</Link>}
+        {isSmallScreen && <Link to="/">Blogs</Link>}
+        {isSmallScreen &&  <Link to="/">Logout</Link>}
       </nav>
     </div>
   );
