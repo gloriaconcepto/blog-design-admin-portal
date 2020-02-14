@@ -1,8 +1,7 @@
 import React, { memo, useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import "./styles/Header.scss";
 const Header = memo(props => {
- 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -22,22 +21,18 @@ const Header = memo(props => {
     }
   };
 
-
-
   return (
     <div className={"header"}>
-         <nav className="Nav">
-        {!isSmallScreen && <a href="/">Create</a>}
-        {!isSmallScreen && <a href="/">Blogs</a>}
-        {!isSmallScreen && <a href="/">Logout</a>}
-      
+      <nav className="Nav">
+        {!isSmallScreen && <Link to="/creatblog">Create</Link>}
+        {!isSmallScreen && <Link to="/">Blogs</Link>}
+        {!isSmallScreen && <Link to="/">Logout</Link>}
       </nav>
-      <nav className='mobile'>
-        {isSmallScreen  && <a href="/">Create</a>}
-        {isSmallScreen  && <a href="/">Blogs</a>}
+      <nav className="mobile">
+        {isSmallScreen && <a href="/">Create</a>}
+        {isSmallScreen && <a href="/">Blogs</a>}
         {isSmallScreen && <a href="/">Logout</a>}
       </nav>
-     
     </div>
   );
 });
